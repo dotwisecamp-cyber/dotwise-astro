@@ -1,0 +1,23 @@
+@import "tailwindcss";/* src/styles/global.css */
+:root {
+  --brand-green: #2d5a27;
+  --brand-earth: #8b7355;
+  --brand-cream: #f5f0e8;
+  --brand-dark: #1a2a1a;
+  --brand-gold: #c9a96e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fafaf8;
+}
