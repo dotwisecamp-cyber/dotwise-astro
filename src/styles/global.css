@@ -1,5 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* 你的自定义样式 */
 :root {
   --brand-green: #2d5a27;
   --brand-earth: #8b7355;
@@ -38,23 +41,4 @@ body {
 
 .badge-smart {
   background: linear-gradient(135deg, #2d5a27, #4a8a3f);
-}
-
-.lang-dropdown {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-8px);
-  transition: all 0.2s ease;
-}
-
-.lang-group:hover .lang-dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .lang-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
