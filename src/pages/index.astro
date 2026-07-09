@@ -4,227 +4,234 @@ import Layout from '../components/Layout.astro';
 ---
 
 <Layout title="dotwise — Premium Camping Gear | Outdoor Equipment">
-  header class
 
+  <!-- ============================================================ -->
+  <!-- 1. Hero Section -->
+  <!-- ============================================================ -->
   <header class="hero-gradient pt-20 min-h-screen flex items-center relative overflow-hidden">
     <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgNWwxMC4zIDUuN2wxMC4zIDUuN3YxMS4zbC0xMC4zIDUuN0wzMCAzNWwtMTAuMy01LjdMOS4zIDE3LjdWNi40TDE5LjcgNS43IDMwIDV6IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+'); background-size: 60px 60px;"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 py-16 md:py-24">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 py-16 md:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-                <!-- 左侧文案 -->
-                <div>
-                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-xs sm:text-sm px-4 py-1.5 rounded-full mb-6 tracking-wide">
-                        <span class="w-2 h-2 bg-[#c9a96e] rounded-full animate-pulse"></span>
-                        Premium Outdoor Gear
-                    </div>
+        <!-- 左侧文案 -->
+        <div>
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white/90 text-xs sm:text-sm px-4 py-1.5 rounded-full mb-6 tracking-wide">
+            <span class="w-2 h-2 bg-[#c9a96e] rounded-full animate-pulse"></span>
+            Premium Outdoor Gear
+          </div>
 
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-tight">
-                        Light Your Moments
-                        <span class="block text-[#e8d5b5] mt-1">Camp in Wisdom</span>
-                    </h1>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] tracking-tight">
+            Light Your Moments
+            <span class="block text-[#e8d5b5] mt-1">Camp in Wisdom</span>
+          </h1>
 
-                    <p class="text-white/75 text-lg md:text-xl max-w-lg mt-6 leading-relaxed">
-                        dotwise crafts premium camping gear — from smart App-controlled lanterns to modular IGT tables&accessories. Designed for outdoor lovers across Asia and beyond.
-                    </p>
+          <p class="text-white/75 text-lg md:text-xl max-w-lg mt-6 leading-relaxed">
+            dotwise crafts premium camping gear — from smart App-controlled lanterns to modular IGT tables & accessories. Designed for outdoor lovers across Asia and beyond.
+          </p>
 
-                    <div class="flex flex-wrap gap-4 mt-8">
-                        <a href="/products.html" class="bg-[#e8d5b5] hover:bg-[#dcc6a3] text-[#1a2a1a] px-8 py-3.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl flex items-center gap-2">
-                            🌲 Explore Products
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </a>
-                        <a href="/lantern.html" class="border border-white/30 hover:bg-white/10 text-white px-8 py-3.5 rounded-full font-semibold transition flex items-center gap-2">
-                            💡 Smart Lantern
-                        </a>
-                    </div>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="/products" class="bg-[#e8d5b5] hover:bg-[#dcc6a3] text-[#1a2a1a] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition shadow-lg hover:shadow-xl flex items-center gap-2 text-sm sm:text-base">
+              🌲 Explore Products
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+            <a href="/lantern" class="border border-white/30 hover:bg-white/10 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition flex items-center gap-2 text-sm sm:text-base">
+              💡 Smart Lantern
+            </a>
+          </div>
 
-                    <div class="flex flex-wrap items-center gap-6 mt-10 text-white/50 text-sm">
-                        <span class="flex items-center gap-1.5">🇨🇳 🇯🇵 🇰🇷</span>
-                        <span class="w-px h-5 bg-white/20"></span>
-                        <span>🌏 Serving Asia · Global Ready</span>
-                    </div>
-                </div>
-
-                <!-- 右侧产品展示 -->
-                <div class="relative flex justify-center lg:justify-end">
-                    <div class="relative w-full max-w-sm lg:max-w-md">
-                        <div class="aspect-square bg-gradient-to-br from-[#e8d5b5]/20 to-[#2d5a27]/20 rounded-3xl border border-white/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
-                            <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 智能露营灯产品展示" class="w-full h-full object-cover rounded-3xl" />
-                        </div>
-                        <div class="absolute -bottom-4 -right-4 bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10 text-white text-sm font-medium">
-                            <span class="text-[#e8d5b5]">✦</span> App-Enabled
-                        </div>
-                        <div class="absolute -top-4 -left-4 bg-[#e8d5b5]/20 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10 text-white/90 text-sm font-medium">
-                            <span class="text-[#e8d5b5]">⚡</span> 2026 Collection
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          <div class="flex flex-wrap items-center gap-6 mt-10 text-white/50 text-sm">
+            <span class="flex items-center gap-1.5">🇨🇳 🇯🇵 🇰🇷</span>
+            <span class="w-px h-5 bg-white/20"></span>
+            <span>🌏 Serving Asia · Global Ready</span>
+          </div>
         </div>
+
+        <!-- 右侧产品展示 -->
+        <div class="relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-sm lg:max-w-md">
+            <div class="aspect-square bg-gradient-to-br from-[#e8d5b5]/20 to-[#2d5a27]/20 rounded-3xl border border-white/10 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+              <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 智能露营灯产品展示" class="w-full h-full object-cover rounded-3xl" loading="eager" />
+            </div>
+            <div class="absolute -bottom-4 -right-4 bg-white/10 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10 text-white text-sm font-medium">
+              <span class="text-[#e8d5b5]">✦</span> App-Enabled
+            </div>
+            <div class="absolute -top-4 -left-4 bg-[#e8d5b5]/20 backdrop-blur-md rounded-2xl px-5 py-3 border border-white/10 text-white/90 text-sm font-medium">
+              <span class="text-[#e8d5b5]">⚡</span> 2026 Collection
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </header>
 
+  <!-- ============================================================ -->
+  <!-- 2. 品牌 Slogan -->
+  <!-- ============================================================ -->
   <section class="py-16 bg-[#f5f0e8]">
-   <div class="max-w-4xl mx-auto px-4 text-center">
-            <p class="text-2xl sm:text-3xl font-light text-[#2d5a27] italic tracking-wide">
-                “Find your rhythm in nature.”
-            </p>
-            <p class="text-gray-500 text-sm tracking-widest mt-3 uppercase">— dotwise design philosophy</p>
-        </div>
+    <div class="max-w-4xl mx-auto px-4 text-center reveal">
+      <p class="text-2xl sm:text-3xl font-light text-[#2d5a27] italic tracking-wide">
+        "Find your rhythm in nature."
+      </p>
+      <p class="text-gray-500 text-sm tracking-widest mt-3 uppercase">— dotwise design philosophy</p>
+    </div>
   </section>
 
+  <!-- ============================================================ -->
+  <!-- 3. 产品线 -->
+  <!-- ============================================================ -->
   <section class="py-20 px-4 max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-            <span class="inline-block bg-[#2d5a27]/10 text-[#2d5a27] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase mb-3">Product Lines</span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-[#1a2a1a]">Gear Designed for the Wild</h2>
-            <p class="text-gray-500 mt-3 max-w-xl mx-auto">Every piece is engineered to enhance your outdoor journey — from dusk till dawn.</p>
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block bg-[#2d5a27]/10 text-[#2d5a27] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase mb-3">Product Lines</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#1a2a1a]">Gear Designed for the Wild</h2>
+      <p class="text-gray-500 mt-3 max-w-xl mx-auto">Every piece is engineered to enhance your outdoor journey — from dusk till dawn.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+
+      <!-- 产品1：露营灯 -->
+      <a href="/lantern" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden reveal reveal-delay-1">
+        <div class="relative h-52 bg-gradient-to-br from-[#2d5a27]/15 to-[#e8d5b5]/20 flex items-center justify-center overflow-hidden">
+          <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 露营灯系列" class="w-full h-full object-cover" loading="lazy" />
+          <span class="absolute bottom-3 right-3 badge-smart text-white text-[10px] font-semibold px-3 py-1 rounded-full tracking-wide">
+            App Control
+          </span>
         </div>
-
-        <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
-
-            <!-- 产品1：露营灯 -->
-            <a href="/lantern.html" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden">
-                <div class="relative h-52 bg-gradient-to-br from-[#2d5a27]/15 to-[#e8d5b5]/20 flex items-center justify-center overflow-hidden">
-                    <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 露营灯系列" class="w-full h-full object-cover" />
-                    <span class="absolute bottom-3 right-3 badge-smart text-white text-[10px] font-semibold px-3 py-1 rounded-full tracking-wide">
-                        App Control
-                    </span>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-bold text-[#1a2a1a]">Camping Lanterns</h3>
-                        <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
-                    </div>
-                    <p class="text-gray-500 text-sm mt-2">Smart lanterns · Classic lanterns · String lights</p>
-                    <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">📱 App Dimming</span>
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🔋 100h+</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 产品2：户外充气泵 -->
-            <a href="/air-pump.html" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden">
-                <div class="relative h-52 bg-gradient-to-br from-[#8b7355]/15 to-[#f5f0e8] flex items-center justify-center overflow-hidden">
-                    <img src="https://img.dotwise.top/133p1.jpg" alt="dotwise 户外充气泵" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-bold text-[#1a2a1a]">inflatable</h3>
-                        <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
-                    </div>
-                    <p class="text-gray-500 text-sm mt-2">Inflate & deflate · Lightweight · Multi-nozzle</p>
-                    <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">⚡ 2-in-1</span>
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🎒 Portable</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 产品3：IGT桌及配件 -->
-            <a href="/igt-table.html" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden">
-                <div class="relative h-52 bg-gradient-to-br from-[#8b7355]/20 to-[#e8d5b5]/20 flex items-center justify-center overflow-hidden">
-                    <img src="https://img.dotwise.top/DW6unittstable.jpg" alt="dotwise IGT桌及配件" class="w-full h-full object-cover" />
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center justify-between">
-                        <h3 class="text-xl font-bold text-[#1a2a1a]">IGT Tables & Accessories</h3>
-                        <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
-                    </div>
-                    <p class="text-gray-500 text-sm mt-2">Modular tables · Stove stands · Storage baskets</p>
-                    <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🧩 Modular</span>
-                        <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🪶 Aluminum</span>
-                    </div>
-                </div>
-            </a>
-
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-[#1a2a1a]">Camping Lanterns</h3>
+            <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
+          </div>
+          <p class="text-gray-500 text-sm mt-2">Smart lanterns · Classic lanterns · String lights</p>
+          <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">📱 App Dimming</span>
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🔋 100h+</span>
+          </div>
         </div>
+      </a>
+
+      <!-- 产品2：户外充气泵 -->
+      <a href="/inflatable" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden reveal reveal-delay-2">
+        <div class="relative h-52 bg-gradient-to-br from-[#8b7355]/15 to-[#f5f0e8] flex items-center justify-center overflow-hidden">
+          <img src="https://img.dotwise.top/133p1.jpg" alt="dotwise 户外充气泵" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-[#1a2a1a]">Inflatable</h3>
+            <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
+          </div>
+          <p class="text-gray-500 text-sm mt-2">Inflate & deflate · Lightweight · Multi-nozzle</p>
+          <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">⚡ 2-in-1</span>
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🎒 Portable</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 产品3：IGT桌及配件 -->
+      <a href="/igt-table" class="product-card group bg-white rounded-3xl shadow-sm hover:shadow-xl border border-gray-100/80 overflow-hidden reveal reveal-delay-3">
+        <div class="relative h-52 bg-gradient-to-br from-[#8b7355]/20 to-[#e8d5b5]/20 flex items-center justify-center overflow-hidden">
+          <img src="https://img.dotwise.top/DW6unittstable.jpg" alt="dotwise IGT桌及配件" class="w-full h-full object-cover" loading="lazy" />
+        </div>
+        <div class="p-6">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold text-[#1a2a1a]">IGT Tables & Accessories</h3>
+            <span class="text-[#2d5a27] text-sm font-medium group-hover:underline">View →</span>
+          </div>
+          <p class="text-gray-500 text-sm mt-2">Modular tables · Stove stands · Storage baskets</p>
+          <div class="flex items-center gap-3 mt-3 text-xs text-[#2d5a27] font-medium">
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🧩 Modular</span>
+            <span class="bg-[#2d5a27]/10 px-3 py-1 rounded-full">🪶 Aluminum</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
   </section>
 
+  <!-- ============================================================ -->
+  <!-- 4. 智能露营灯 特色专区 -->
+  <!-- ============================================================ -->
+  <section class="py-20 px-4 bg-[#1a2a1a] text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="reveal">
+          <span class="inline-block bg-[#e8d5b5]/20 text-[#e8d5b5] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase">Featured</span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-4 leading-tight">
+            Smart Lantern
+            <span class="block text-[#e8d5b5]">Control with Your Phone</span>
+          </h2>
+          <p class="text-white/70 text-lg mt-4 max-w-md leading-relaxed">
+            Adjust brightness, color temperature, and timers — all from the dotwise App. Bluetooth enabled, 100% local control.
+          </p>
+          <ul class="mt-6 space-y-3 text-white/80">
+            <li class="flex items-center gap-3">✅ <span>Multi-color temperature (2700K–6500K)</span></li>
+            <li class="flex items-center gap-3">✅ <span>Preset scenes: Campfire, Reading, Aurora</span></li>
+            <li class="flex items-center gap-3">✅ <span>Up to 120 hours battery life</span></li>
+            <li class="flex items-center gap-3">✅ <span>Weatherproof · IP65 rated</span></li>
+          </ul>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="/lantern#smart" class="bg-[#e8d5b5] hover:bg-[#dcc6a3] text-[#1a2a1a] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition shadow-lg text-sm sm:text-base">
+              🔦 Learn More
+            </a>
+            <a href="/lantern#app-download" class="border border-white/30 hover:bg-white/10 text-white px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold transition text-sm sm:text-base">
+              📲 Download App
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center reveal">
+          <div class="w-full max-w-sm aspect-square bg-gradient-to-br from-[#e8d5b5]/10 to-[#2d5a27]/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden">
+            <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 智能露营灯" class="w-full h-full object-cover rounded-3xl" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- ============================================================ -->
-    <!-- 5. 智能露营灯 特色专区 -->
-    <!-- ============================================================ -->
-    <section class="py-20 px-4 bg-[#1a2a1a] text-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="inline-block bg-[#e8d5b5]/20 text-[#e8d5b5] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase">Featured</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold mt-4 leading-tight">
-                        Smart Lantern
-                        <span class="block text-[#e8d5b5]">Control with Your Phone</span>
-                    </h2>
-                    <p class="text-white/70 text-lg mt-4 max-w-md leading-relaxed">
-                        Adjust brightness, color temperature, and timers — all from the dotwise App. Bluetooth enabled, 100% local control.
-                    </p>
-                    <ul class="mt-6 space-y-3 text-white/80">
-                        <li class="flex items-center gap-3">✅ <span>Multi-color temperature (2700K–6500K)</span></li>
-                        <li class="flex items-center gap-3">✅ <span>Preset scenes: Campfire, Reading, Aurora</span></li>
-                        <li class="flex items-center gap-3">✅ <span>Up to 120 hours battery life</span></li>
-                        <li class="flex items-center gap-3">✅ <span>Weatherproof · IP65 rated</span></li>
-                    </ul>
-                    <div class="flex flex-wrap gap-4 mt-8">
-                        <a href="/lantern.html#smart" class="bg-[#e8d5b5] hover:bg-[#dcc6a3] text-[#1a2a1a] px-8 py-3 rounded-full font-semibold transition shadow-lg">
-                            🔦 Learn More
-                        </a>
-                        <a href="/lantern.html#app-download" class="border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold transition">
-                            📲 Download App
-                        </a>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <div class="w-full max-w-sm aspect-square bg-gradient-to-br from-[#e8d5b5]/10 to-[#2d5a27]/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden">
-                        <img src="https://img.dotwise.top/1549.jpg" alt="dotwise 智能露营灯" class="w-full h-full object-cover rounded-3xl" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- ============================================================ -->
+  <!-- 5. 为什么选择 dotwise -->
+  <!-- ============================================================ -->
+  <section class="py-20 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <span class="inline-block bg-[#2d5a27]/10 text-[#2d5a27] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase mb-3">Why dotwise</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#1a2a1a]">Built for the Outdoor Life</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition reveal reveal-delay-1">
+        <div class="text-4xl mb-4">🌿</div>
+        <h3 class="font-bold text-[#1a2a1a]">Nature-Inspired</h3>
+        <p class="text-gray-500 text-sm mt-2">Designed with the outdoors in mind — durable, reliable, and harmonious.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition reveal reveal-delay-2">
+        <div class="text-4xl mb-4">📱</div>
+        <h3 class="font-bold text-[#1a2a1a]">Smart Integration</h3>
+        <p class="text-gray-500 text-sm mt-2">App-controlled products that enhance, not complicate, your experience.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition reveal reveal-delay-2">
+        <div class="text-4xl mb-4">🌏</div>
+        <h3 class="font-bold text-[#1a2a1a]">Asia-Focused</h3>
+        <p class="text-gray-500 text-sm mt-2">Tailored for campers in China, Japan, Korea — and beyond.</p>
+      </div>
+      <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition reveal reveal-delay-3">
+        <div class="text-4xl mb-4">♻️</div>
+        <h3 class="font-bold text-[#1a2a1a]">Built to Last</h3>
+        <p class="text-gray-500 text-sm mt-2">Quality materials, thoughtful engineering — gear that travels with you.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- ============================================================ -->
-    <!-- 6. 为什么选择 dotwise -->
-    <!-- ============================================================ -->
-    <section class="py-20 px-4 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="inline-block bg-[#2d5a27]/10 text-[#2d5a27] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase mb-3">Why dotwise</span>
-            <h2 class="text-3xl sm:text-4xl font-bold text-[#1a2a1a]">Built for the Outdoor Life</h2>
-        </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition">
-                <div class="text-4xl mb-4">🌿</div>
-                <h3 class="font-bold text-[#1a2a1a]">Nature-Inspired</h3>
-                <p class="text-gray-500 text-sm mt-2">Designed with the outdoors in mind — durable, reliable, and harmonious.</p>
-            </div>
-            <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition">
-                <div class="text-4xl mb-4">📱</div>
-                <h3 class="font-bold text-[#1a2a1a]">Smart Integration</h3>
-                <p class="text-gray-500 text-sm mt-2">App-controlled products that enhance, not complicate, your experience.</p>
-            </div>
-            <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition">
-                <div class="text-4xl mb-4">🌏</div>
-                <h3 class="font-bold text-[#1a2a1a]">Asia-Focused</h3>
-                <p class="text-gray-500 text-sm mt-2">Tailored for campers in China, Japan, Korea — and beyond.</p>
-            </div>
-            <div class="text-center p-6 rounded-2xl hover:bg-white/50 transition">
-                <div class="text-4xl mb-4">♻️</div>
-                <h3 class="font-bold text-[#1a2a1a]">Built to Last</h3>
-                <p class="text-gray-500 text-sm mt-2">Quality materials, thoughtful engineering — gear that travels with you.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================ -->
-    <!-- 7. 市场区域 -->
-    <!-- ============================================================ -->
-    <section class="py-16 bg-[#f5f0e8]">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#1a2a1a] mb-2">🌏 Serving Campers Across Asia</h2>
-            <p class="text-gray-500 text-sm">From the mountains of Japan to the coasts of Korea — dotwise is your companion.</p>
-            <div class="flex flex-wrap justify-center gap-8 mt-8 text-sm">
-                <div class="flex items-center gap-2 bg-white/60 px-6 py-3 rounded-full shadow-sm">🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea</div>
-                <div class="flex items-center gap-2 bg-white/60 px-6 py-3 rounded-full shadow-sm">🌏 Global shipping · 2026</div>
-            </div>
-        </div>
-    </section>
+  <!-- ============================================================ -->
+  <!-- 6. 市场区域 -->
+  <!-- ============================================================ -->
+  <section class="py-16 bg-[#f5f0e8]">
+    <div class="max-w-6xl mx-auto px-4 text-center reveal">
+      <h2 class="text-2xl sm:text-3xl font-bold text-[#1a2a1a] mb-2">🌏 Serving Campers Across Asia</h2>
+      <p class="text-gray-500 text-sm">From the mountains of Japan to the coasts of Korea — dotwise is your companion.</p>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-8 mt-8 text-sm">
+        <div class="flex items-center gap-2 bg-white/60 px-4 sm:px-6 py-3 rounded-full shadow-sm">🇨🇳 China · 🇯🇵 Japan · 🇰🇷 Korea</div>
+        <div class="flex items-center gap-2 bg-white/60 px-4 sm:px-6 py-3 rounded-full shadow-sm">🌏 Global shipping · 2026</div>
+      </div>
+    </div>
+  </section>
 </Layout>
