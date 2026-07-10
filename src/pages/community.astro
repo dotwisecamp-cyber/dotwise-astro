@@ -1,0 +1,71 @@
+---
+// src/pages/community.astro
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="dotwise Community — Camping Stories & Events">
+
+  <!-- Hero 区域 -->
+  <section class="pt-32 pb-20 px-4 bg-[#f5f0e8]">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="inline-block bg-[#2d5a27]/10 text-[#2d5a27] text-xs font-semibold px-4 py-1 rounded-full tracking-wider uppercase mb-4">Community</span>
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#1a2a1a] leading-tight">
+        加入我们的
+        <span class="block text-[#2d5a27] mt-2">露营社区</span>
+      </h1>
+      <p class="text-gray-600 text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+        与中日韩的露营爱好者一起分享故事、交换经验、探索户外。
+      </p>
+    </div>
+  </section>
+
+  <!-- 社区板块 -->
+  <section class="py-20 px-4 max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">📖</div>
+        <h3 class="text-xl font-bold text-[#1a2a1a]">露营故事</h3>
+        <p class="text-gray-500 text-sm mt-2">分享你的露营经历，发现更多目的地灵感</p>
+        <a href="#" class="inline-block mt-4 text-[#2d5a27] font-medium hover:underline">查看故事 →</a>
+      </div>
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">📅</div>
+        <h3 class="text-xl font-bold text-[#1a2a1a]">活动日历</h3>
+        <p class="text-gray-500 text-sm mt-2">线上线下露营活动，与志同道合的朋友相聚</p>
+        <a href="#" class="inline-block mt-4 text-[#2d5a27] font-medium hover:underline">查看活动 →</a>
+      </div>
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 text-center hover:shadow-lg transition">
+        <div class="text-5xl mb-4">💬</div>
+        <h3 class="text-xl font-bold text-[#1a2a1a]">在线社区</h3>
+        <p class="text-gray-500 text-sm mt-2">加入我们的社群，随时交流露营经验</p>
+        <a href="#" class="inline-block mt-4 text-[#2d5a27] font-medium hover:underline">加入社群 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 中日韩专区 -->
+  <section class="py-20 px-4 bg-[#1a2a1a] text-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">🌏 中日韩露营地图</h2>
+      <p class="text-white/60 mb-12">来自三地露营者的真实推荐</p>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-4xl block mb-3">🇨🇳</span>
+          <h4 class="font-bold">中国</h4>
+          <p class="text-white/50 text-sm">黄山 · 四姑娘山 · 香格里拉</p>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-4xl block mb-3">🇯🇵</span>
+          <h4 class="font-bold">日本</h4>
+          <p class="text-white/50 text-sm">富士山 · 白川乡 · 北海道</p>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+          <span class="text-4xl block mb-3">🇰🇷</span>
+          <h4 class="font-bold">韩国</h4>
+          <p class="text-white/50 text-sm">济州岛 · 雪岳山 · 庆州</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
