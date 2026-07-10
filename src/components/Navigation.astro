@@ -143,37 +143,117 @@
     </div>
   </div>
 </nav>
+<!-- 在 Navigation.astro 的末尾，</nav> 之后添加 -->
+<!-- ============================================================ -->
+<!-- 下拉菜单样式 -->
+<!-- ============================================================ -->
+<style is:global>
+  .products-dropdown,
+  .lang-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+  }
 
+  .products-dropdown.show,
+  .lang-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+</style>
+
+<!-- ============================================================ -->
+<!-- JavaScript：下拉菜单 + 移动端菜单 -->
+<!-- ============================================================ -->
 <script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById('mobile-menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const openIcon = document.getElementById('menu-icon-open');
-  const closeIcon = document.getElementById('menu-icon-close');
-
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
-      if (isOpen) {
-        mobileMenu.classList.add('hidden');
-        openIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-        document.body.style.overflow = '';
-      } else {
-        mobileMenu.classList.remove('hidden');
-        openIcon.classList.add('hidden');
-        closeIcon.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
+  document.addEventListener('DOMContentLoaded', function() {
+    // --- 桌面端下拉菜单 ---
+    const dropdownGroups = document.querySelectorAll('.products-group, .lang-group');
+    
+    dropdownGroups.forEach(group => {
+      const button = group.querySelector('button, a[href="/products"]');
+      const dropdown = group.querySelector('.products-dropdown, .lang-dropdown');
+      
+      if (button && dropdown) {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // 关闭所有其他下拉菜单
+          dropdownGroups.forEach(otherGroup => {
+            if (otherGroup !== group) {
+              const otherDropdown = otherGroup.querySelector('.products-dropdown, .lang-dropdown');
+              if (otherDropdown) {
+                otherDropdown.classList.remove('show');
+              }
+            }
+          });
+          
+          // 切换当前下拉菜单
+          dropdown.classList.toggle('show');
+        });
       }
     });
 
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        openIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-        document.body.style.overflow = '';
-      });
+    // 点击页面其他位置关闭所有下拉菜单
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.products-group') && !e.target.closest('.lang-group')) {
+        document.querySelectorAll('.products-dropdown, .lang-dropdown').forEach(dd => {
+          dd.classList.remove('show');
+        });
+      }
     });
-  }
+
+    // --- 移动端菜单 ---
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const openIcon = document.getElementById('menu-icon-open');
+    const closeIcon = document.getElementById('menu-icon-close');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', function() {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        if (isOpen) {
+          mobileMenu.classList.add('hidden');
+          openIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          document.body.style.overflow = '';
+        } else {
+          mobileMenu.classList.remove('hidden');
+          openIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+
+      // 点击移动端菜单中的链接后自动关闭菜单
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+          openIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  });
 </script>
+<style is:global>
+  /* 下拉菜单基础样式 */
+  .products-dropdown,
+  .lang-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all 0.2s ease;
+  }
+
+  /* 下拉菜单展开状态 */
+  .products-dropdown.show,
+  .lang-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+</style>
